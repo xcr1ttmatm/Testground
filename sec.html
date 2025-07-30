@@ -7,13 +7,29 @@
     <style>
         body {
             padding-bottom: 1000px;
+            background-color:lightblue;
+        }
+        h1 {
+            color:darkblue;
+        }
+        p {
+            font-size:18px;
+            text-align: center;
+        }
+        h2 {
+            color:blue;
+        }
+        .highlight {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
     <h1><b>Michael Angelo</b></h1>
     <h2><i>Ganahan ko mahimong Web Dev</i></h2>
-    <p>Gusto ko maka kat-on og web developmentment. Nagtuon ko og <mark>HTML</mark> aron makahimo ko og akong sariling website!</p><br><br>
+    <p>Gusto ko maka kat-on og web development. Nagtuon ko og <mark>HTML</mark> aron makahimo ko og akong sariling website!</p><br><br>
+
+    <p class="highlight">Kini ang paragraph nga naay yellow nga background</p>
 
     <p>Mao ni akong mga ganahan nga sud-an haha</p>
     <ul>
@@ -25,7 +41,7 @@
 
     <p>Akong buhaton para mahimo kong Web Dev</p>
     <ol>
-        <li>Magtoon sa HTMl, CSS, Javascript</li>
+        <li>Magtoon sa HTML, CSS, Javascript</li>
         <li>Magtoon sa Git, React</li>
         <li>Magtoon sa Node.js, Express</li>
         <li>Magtoon og MongoDB</li>
@@ -56,6 +72,8 @@
     <p>Registration Form!</p>
    <form action="submit.html" method="post">
 
+    <fieldset>
+        <legend>Basic Info</legend>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
 
@@ -64,15 +82,36 @@
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password"><br><br>
+    </fieldset>
 
-        <p>Gender:</p>
-        <input type="radio" id="male" name="male"><br><br>
-        <label for="gender">Male</label>
+    <fieldset>
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="male"> Male</label><br>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+    </fieldset>
 
-        <input type="radio" id="female" name="female"><br><br>
-        <label for="gender">Female</label>
+    <fieldset>
+        <legend>Favorite ML Heroes</legend>
+        <input type="checkbox" id="wanwan" name="wanwan">
+        <label for="wanwan">Wanwan</label><br>
 
+        <input type="checkbox" id="irithel" name="irithel">
+        <label for="irithel">Irithel</label><br>
+        
+        <input type="checkbox" id="ixia" name="ixia">
+        <label for="ixia">Ixia</label><br><br>
+    </fieldset>
 
+    <fieldset>
+        <legend>Other Info</legend>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Submit</legend>
+        <input type="submit" value="Submit">
+    </fieldset>
 
    </form>
 
@@ -81,7 +120,7 @@
         <img src="/images/Facebook-logo.png" alt="Facebook Logo!" style="width:50px;height:50px">
     </a>
     <a href="https://www.youtube.com/@angeloo.7160" title="Michael's Youtube Channel" target="_blank">
-        <img id="#yt" src="/images/Youtube-logo.png" alt="Youtube Logo!" style="width:50px;height:50px">
+        <img src="/images/Youtube-logo.png" alt="Youtube Logo!" style="width:50px;height:50px">
     </a>
 </body>
 </html>
