@@ -75,9 +75,13 @@
             background-color: white;
             border: 2x solid #ccc;
             border-radius: 10px;
+            box-shadow: 10px 10px 15px gray;
         }
 
         .form-group-act2 {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 10px;
             margin-bottom: 15px;
         }
 
@@ -116,10 +120,13 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        .proceed-ta {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <h1><b>Michael Angelo</b></h1>
+    <a href="proceedta.html" class="proceed-ta"><h1><b>Michael Angelo</b></h1></a>
     <h2><i>Ganahan ko mahimong Web Dev</i></h2>
     <p>Gusto ko maka kat-on og web development. Nagtuon ko og <mark>HTML</mark> aron makahimo ko og akong sariling website!</p><br><br>
 
@@ -175,17 +182,13 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="input-group">
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email">
-                        </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="input-group">
                             <label for="password">Password:</label>
                             <input type="password" id="password" name="password">
-                        </div>
                     </div>
                 </fieldset>
 
@@ -297,6 +300,27 @@
                                 <option value="japan">GMT+9 (Japan)</option>
                                 <option value="germany">GMT+1 (Germany)</option>
                             </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Billing Address</legend>
+                        <div class="form-group-act2">
+                            <label for="street">Street</label>
+                            <input type="text" id="street" name="street">
+
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+
+                            <label for="zip-code">Zip Code</label>
+                            <input type="text" id="zip-code" name="zip-code">
+
+                            <label for="zip-code">Country</label>
+                                <select id="country" name="country">
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="USA">USA</option>
+                                </select>
                         </div>
                     </fieldset>
 

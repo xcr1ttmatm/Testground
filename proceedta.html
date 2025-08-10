@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #8cbeeb;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+        header {
+            padding: 10px;
+            background-color: #5fd3f7;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            display: grid;
+            gap: 20px;
+            box-shadow: 0 5px 10px gray;
+            border-radius: 5px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 auto;
+            width: 700px;
+        }
+
+        .image {
+            max-width: 150px;
+            height: auto;
+            align-items: center;
+        }
+        .wrapper {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto;
+            gap: 20px;
+        }
+        main h2 {
+            padding-left: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header id="about">
+        <h1>Practice mode!</h1>
+        <nav>
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="main"><li>Main</li></a>
+                <a href="ends"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <section>
+            <h2>This is all about programming practice.</h2>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="item">
+                        <div>
+                            <img src="images/Gatalikod.jpg" alt="Gatalikod ko" class="image">
+                            <p>This is me nga gatalikod</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="item">
+                        <img src="images/Gatalikod.jpg" alt="Facebook Logo" class="image">
+                        <p>This is Facebook Logo</p>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="item">
+                        <img src="images/Gatalikod.jpg" alt="Youtube Logo" class="image">
+                        <p>This is youtube Logo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="ends">
+        <p>&copy; 2025 Michael Angelo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
